@@ -1,0 +1,13 @@
+{
+  "project_name": "neuralcommons-generator",
+  "backend_framework": "fastapi",
+  "frontend_framework": "nextjs",
+  "ollama_model": "mistral",
+  "output_dir": "output",
+  "prompts_dir": "prompts",
+  "templates_dir": "templates",
+  "generate_dashboard": true,
+  "generate_provenance_viewer": true,
+  "generate_ipfs_integration": true,
+  "base_url": "http://localhost:11434"
+}
