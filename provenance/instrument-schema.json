@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CVP Instrument",
+  "type": "object",
+  "required": ["instrument", "namespace", "dictionary", "genesis_cid", "context", "previous", "status"],
+  "properties": {
+    "instrument": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "dictionary": {
+      "type": "string"
+    },
+    "dictionary_version": {
+      "type": "string"
+    },
+    "genesis_cid": {
+      "type": "string"
+    },
+    "context": {
+      "type": "object",
+      "required": ["tri_vector", "spatial_vector", "rule_vector"],
+      "properties": {
+        "tri_vector": { "type": "string" },
+        "spatial_vector": { "type": "string" },
+        "rule_vector": { "type": "string" }
+      }
+    },
+    "previous": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

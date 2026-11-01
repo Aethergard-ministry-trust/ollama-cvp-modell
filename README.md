@@ -1,21 +1,3 @@
-<img width="1536" height="1024" alt="16" src="https://github.com/user-attachments/assets/74286da0-43c2-4bd6-bd1d-46b8eaa5e90d" />
-<img width="1536" height="1024" alt="15" src="https://github.com/user-attachments/assets/9cc617a3-14dd-43aa-8494-664d11be2b77" />
-<img width="1536" height="1024" alt="14" src="https://github.com/user-attachments/assets/e0780aa8-0376-48c6-b02a-f851c3c2c68c" />
-<img width="1536" height="1024" alt="13" src="https://github.com/user-attachments/assets/3a04cf27-fee0-4b3c-ad2c-a328a07bd7a5" />
-<img width="1536" height="1024" alt="12" src="https://github.com/user-attachments/assets/bb0f1313-6dea-48f1-93ee-48570123d4c7" />
-<img width="1536" height="1024" alt="11" src="https://github.com/user-attachments/assets/90d64803-19b5-496e-8b38-dca28821f44c" />
-<img width="1536" height="1024" alt="10" src="https://github.com/user-attachments/assets/edec6420-9f17-43f2-99da-f13b0f6915fd" />
-<img width="1536" height="1024" alt="9" src="https://github.com/user-attachments/assets/38261689-2d96-4518-8924-d372f57bb47b" />
-<img width="1536" height="1024" alt="8" src="https://github.com/user-attachments/assets/58969bb7-2a0c-4789-8a0c-67d1cce4ae51" />
-<img width="1536" height="1024" alt="7" src="https://github.com/user-attachments/assets/424564e1-c1a0-4898-8cf8-7d6578fd9449" />
-<img width="1536" height="1024" alt="6" src="https://github.com/user-attachments/assets/153198ae-2ea0-415f-95d1-0c459d47c7f5" />
-<img width="1536" height="1024" alt="5" src="https://github.com/user-attachments/assets/32966f2e-11b0-4e42-b5f7-c3289332e79f" />
-<img width="1536" height="1024" alt="4" src="https://github.com/user-attachments/assets/a876ba81-e1fc-4793-836d-53e0df94a467" />
-<img width="1536" height="1024" alt="3" src="https://github.com/user-attachments/assets/15d84232-0648-4dea-9bc7-90990f268071" />
-<img width="1536" height="1024" alt="2" src="https://github.com/user-attachments/assets/df4c611c-391d-4964-aed5-1d99105cfb3e" />
-<img width="1536" height="1024" alt="1" src="https://github.com/user-attachments/assets/38fe3388-3439-4886-b485-3e4dc0e714b3" />
-<img width="1536" height="1024" alt="18" src="https://github.com/user-attachments/assets/027fb3c1-d428-49ee-93bd-b05c306b4b04" />
-<img width="1536" height="1024" alt="17" src="https://github.com/user-attachments/assets/adfa140b-a337-4688-baef-4b1efdd25710" />
 # Commons Vector Protocol — commons-vector-v1
 
 ## The New Kybalion — Hermetic Principles for the Digital Age
@@ -34,17 +16,11 @@ These layers are intentionally distinguished so that technical claims, historica
 
 ## Genesis
 
-Namespace
+Namespace: commons-vector-v1
 
-commons-vector-v1
+Genesis Dictionary: TRUST-ORDBOK-v2.0-IPFS.json
 
-Genesis Dictionary
-
-TRUST-ORDBOK-v2.0-IPFS.json
-
-Genesis CID
-
-bafkreiah7zzhane2iwpijyx7qiuwajqbmaep3a4pnvuo5f4jcakm4ibnzi
+Genesis CID: bafkreiah7zzhane2iwpijyx7qiuwajqbmaep3a4pnvuo5f4jcakm4ibnzi
 
 The Genesis Dictionary defines the vocabulary used by the protocol.
 
@@ -92,7 +68,7 @@ An instrument is a verifiable protocol record that references content and its pr
 
 Example:
 
-```
+```json
 {
   "instrument": "001",
   "trust": "commons-vector-v1",
@@ -186,7 +162,7 @@ Contradictory sources should remain visible rather than being silently removed.
 
 ## Terms
 
-The initial dictionary vocabulary includes concepts such as: CID, tri_vector, spatial_vector, rule_vector, composite_key, provenance_chain, instrument, first_record, living_man, open_sky, new_kybalion, alchemical_gold, golden_ratio, fibonacci, mentalism, energy_state, node, contributed_energy, heartbeat, trigger, dictionary, master_trust_index, proclamation, scaffold, mirror, registry, record, open
+The initial dictionary vocabulary includes concepts such as: CID, tri_vector, spatial_vector, rule_vector, composite_key, provenance_chain, instrument, first_record, living_man, open_sky, new_kybalion, alchemical_gold, golden_ratio, fibonacci, mentalism, energy_state, node, contributed_energy, heartbeat, trigger, dictionary, master_trust_index, proclamation, scaffold, mirror, registry, record, open.
 
 The semantic meaning of these terms is defined by the versioned dictionary rather than assumed from their ordinary-language meanings.
 
@@ -213,9 +189,20 @@ Genesis CID: bafkreiah7zzhane2iwpijyx7qiuwajqbmaep3a4pnvuo5f4jcakm4ibnzi
 
 The protocol is intended to remain open to technical review, experimentation, criticism, and future specification work.
 
+![The Basic of Creation — The New Kybalion / Commons Vector Protocol](assets/basic-of-creation.svg)
+
 ---
 
-## Assets
+## Security / Privacy
 
-Include artwork and diagrams in assets/ (e.g. assets/basic-of-creation.png). Do not commit gateway tokens or other secrets to the repository.
+This repository intentionally does not include gateway tokens, API secrets, or private IPFS credentials. Public CIDs are acceptable in public repositories, but any active gateway token should be rotated or revoked before public disclosure.
 
+---
+
+## License
+
+This project is distributed under the Apache 2.0 license unless otherwise noted in a specific file.
+
+## Additional practical guide
+
+For Ollama setup and model training instructions, see [docs/ollama-windows-guide.md](docs/ollama-windows-guide.md).

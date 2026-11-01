@@ -1,0 +1,41 @@
+{
+  "dictionary": "TRUST-ORDBOK-v2.0-IPFS",
+  "version": "2.0",
+  "protocol": "commons-vector-v1",
+  "genesis_cid": "bafkreiah7zzhane2iwpijyx7qiuwajqbmaep3a4pnvuo5f4jcakm4ibnzi",
+  "context": {
+    "tri_vector": "1a0de0b-f30c",
+    "spatial_vector": "7e34-88a8",
+    "rule_vector": "057e4f535abc"
+  },
+  "terms_added": [
+    "CID",
+    "tri_vector",
+    "spatial_vector",
+    "rule_vector",
+    "composite_key",
+    "provenance_chain",
+    "instrument",
+    "first_record",
+    "living_man",
+    "open_sky",
+    "new_kybalion",
+    "alchemical_gold",
+    "golden_ratio",
+    "fibonacci",
+    "mentalism",
+    "energy_state",
+    "node",
+    "contributed_energy",
+    "heartbeat",
+    "trigger",
+    "dictionary",
+    "master_trust_index",
+    "proclamation",
+    "scaffold",
+    "mirror",
+    "registry",
+    "record",
+    "open"
+  ]
+}

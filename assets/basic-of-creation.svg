@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Basic of Creation</title>
+  <desc id="desc">Stylized symbolic diagram for the Commons Vector Protocol and the New Kybalion.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="55%" stop-color="#101d33"/>
+      <stop offset="100%" stop-color="#1f1a2b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7e7a3"/>
+      <stop offset="50%" stop-color="#d9b15f"/>
+      <stop offset="100%" stop-color="#a56f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="600" cy="400" r="220" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="600" cy="400" r="120" fill="none" stroke="#d9b15f" stroke-width="2" stroke-dasharray="10 10"/>
+  <path d="M600 180 L600 620 M330 400 L870 400 M420 260 L780 540 M420 540 L780 260" stroke="url(#gold)" stroke-width="2" opacity="0.8"/>
+  <text x="600" y="110" text-anchor="middle" fill="#f2d98f" font-size="40" font-family="Georgia, serif">The Basic of Creation</text>
+  <text x="600" y="690" text-anchor="middle" fill="#f2d98f" font-size="28" font-family="Georgia, serif">Commons Vector Protocol — commons-vector-v1</text>
+  <text x="600" y="380" text-anchor="middle" fill="#f8f4d5" font-size="88" font-family="Georgia, serif">✦</text>
+</svg>

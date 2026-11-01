@@ -1,0 +1,15 @@
+{
+  "instrument": "GENESIS-001",
+  "namespace": "commons-vector-v1",
+  "dictionary": "TRUST-ORDBOK-v2.0-IPFS",
+  "dictionary_version": "2.0",
+  "genesis_cid": "bafkreiah7zzhane2iwpijyx7qiuwajqbmaep3a4pnvuo5f4jcakm4ibnzi",
+  "context": {
+    "tri_vector": "1a0de0b-f30c",
+    "spatial_vector": "7e34-88a8",
+    "rule_vector": "057e4f535abc"
+  },
+  "previous": null,
+  "status": "genesis",
+  "description": "Initial protocol instrument for the commons-vector-v1 namespace."
+}

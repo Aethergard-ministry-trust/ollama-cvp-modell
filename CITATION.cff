@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it."
+title: "Commons Vector Protocol"
+authors:
+  - family-names: "Grønli"
+    given-names: "Kim Terje Rudschinat"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Aethergard Ministry Trust"
+version: "commons-vector-v1"
+date-released: "2026-11-01"
+url: "https://github.com/Aethergard-ministry-trust/ollama-cvp-modell"
+keywords:
+  - commons-vector-protocol
+  - provenance
+  - ipfs
+  - trust-orbdok
+  - kybalion
+  - digital-heritage
+license: "Apache-2.0"
+description: >-
+  Commons Vector Protocol (CVP) is an IPFS-native provenance framework for representing
+  content, context, instruments, and historical records as verifiable digital evidence.
