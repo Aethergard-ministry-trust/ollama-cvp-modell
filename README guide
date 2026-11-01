@@ -1,0 +1,244 @@
+Her er en **komplett, ferdig pakke** for GitHub-repoet ditt, inkludert alle nødvendige filer for **CVP-basert treningsdata for Ollama**, med **provenance**, **non-profit struktur**, og **full integrasjon**. Du kan kopiere dette direkte inn i et nytt GitHub-repo.
+
+---
+
+---
+
+---
+
+# **📦 Full GitHub Repository Pakke for NeuralCommons (CVP + Ollama)**
+*(Kopier dette direkte inn i ditt nye repo)*
+
+---
+
+## **📁 Repository Structure**
+```
+neuralcommons/
+│
+├── .github/
+│   └── workflows/
+│       └── ci.yml                  # GitHub Actions for testing
+│
+├── docs/
+│   ├── ARCHITECTURE.md             # Teknisk oversikt
+│   ├── USAGE.md                    # Bruksanvisning
+│   ├── GRANTS.md                   # Grant søknader
+│   └── LEGAL.md                    # Juridisk informasjon (501(c)(3))
+│
+├── src/
+│   ├── cli/
+│   │   ├── create_dataset.py       # Opprett CVP-instrumenter
+│   │   ├── dedupe.py               # Dedupliser data
+│   │   ├── preprocess.py           # Rens rådata
+│   │   ├── verify_chain.py         # Verifiser provenance
+│   │   └── convert_to_ollama.py    # Konverter til Ollama-format
+│   │
+│   ├── lib/
+│   │   ├── crypto.py               # Ed25519 signering
+│   │   ├── ipfs_utils.py           # IPFS integrasjon
+│   │   └── vectors.py              # Tri-vector logikk
+│   │
+│   └── web/
+│       ├── index.html              # Web-grensesnitt
+│       └── app.js                  # Frontend (React)
+│
+├── instruments/                    # CVP-instrumenter
+│   ├── GENESIS.car.json            # TRUST-ORDBOK instrument
+│   └── 20261101120000.car.json     # Eksempel dataset
+│
+├── data/
+│   ├── raw/                        # Rådata
+│   │   └── wikipedia_abstracts.json
+│   ├── processed/                  # Rensede data
+│   │   └── wikipedia_deduped.json
+│   └── ollama/                     # Ollama-klare data
+│       └── train_data.jsonl
+│
+├── models/                         # Trenede modeller
+│   └── neuralcommons-mistral/      # Fine-tunet Ollama modell
+│
+├── keys/                           # Kryptografiske nøkler
+│   ├── public_key.pem
+│   └── private_key.pem
+│
+├── scripts/
+│   ├── fine-tune.sh                # Fine-tuning script (Linux/Mac)
+│   └── fine-tune.ps1               # Fine-tuning script (Windows)
+│
+├── .gitignore
+├── LICENSE                         # Apache 2.0
+├── README.md                       # Hoveddokumentasjon
+├── requirements.txt                # Python avhengigheter
+└── package.json                    # Node.js avhengigheter (for web)
+```
+
+---
+
+---
+
+## **📄 1. README.md**
+```markdown
+# 🌍 NeuralCommons
+**Open-Source AI Training Data with Commons Vector Protocol (CVP) Provenance**
+
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub Stars](https://img.shields.io/github/stars/neuralcommons/neuralcommons.svg)](https://github.com/neuralcommons/neuralcommons/stargazers)
+[![Discord](https://img.shields.io/discord/1028346210123575306.svg)](https://discord.gg/neuralcommons)
+
+---
+
+## 🎯 Mission
+To democratize AI training by providing **open, verifiable, and ethically sourced datasets** through the **Commons Vector Protocol (CVP)**. All data is:
+✅ **Cryptographically signed** (Ed25519)
+✅ **Content-addressed** (IPFS CIDs)
+✅ **Provenance-tracked** (CVP Instruments)
+✅ **Ollama-compatible** (JSONL for fine-tuning)
+
+---
+
+## 🚀 Quick Start
+
+### 1. Install Dependencies
+```bash
+# Clone repo
+git clone https://github.com/neuralcommons/neuralcommons
+cd neuralcommons
+
+# Python environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
+
+# Install Ollama (https://ollama.com)
+curl -fsSL https://ollama.com/install.sh | sh  # Linux/Mac
+iwr -useb https://ollama.com/install.ps1 | iex  # Windows
+ollama pull mistral
+```
+
+### 2. Prepare Training Data
+```bash
+# Download and preprocess Wikipedia data
+python src/cli/preprocess.py
+
+# Deduplicate
+python src/cli/dedupe.py
+
+# Create CVP Instrument
+python src/cli/create_dataset.py \
+  --input data/processed/wikipedia_deduped.json \
+  --name "Wikipedia Cleaned Dataset v1" \
+  --output_dir instruments
+```
+
+### 3. Convert to Ollama Format
+```bash
+python src/cli/convert_to_ollama.py \
+  --input instruments/20261101120000.car.json \
+  --output data/ollama/train_data.jsonl
+```
+
+### 4. Fine-Tune with Ollama
+```bash
+# Windows (PowerShell)
+.\scripts\fine-tune.ps1
+
+# Linux/Mac
+bash scripts/fine-tune.sh
+```
+
+### 5. Run Your Model
+```bash
+ollama run neuralcommons-mistral
+```
+
+---
+
+## 📂 Project Structure
+| Directory       | Purpose                          |
+|-----------------|----------------------------------|
+| `/src/cli`      | CLI tools for data processing    |
+| `/instruments`  | CVP instruments (JSON)           |
+| `/data`         | Raw/processed training data      |
+| `/models`       | Fine-tuned Ollama models         |
+| `/docs`         | Documentation                    |
+
+---
+
+## 🤝 Contributing
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+## 📜 License
+Apache 2.0 – See [LICENSE](LICENSE).
+
+---
+## 💬 Community
+- **Discord**: [Join our server](https://discord.gg/neuralcommons)
+- **Twitter**: [@NeuralCommons](https://twitter.com/NeuralCommons)
+- **Email**: contact@neuralcommons.org
+```
+
+---
+
+---
+
+## **📄 2. LICENSE (Apache 2.0)**
+```text
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+      ...
+```
+*(Full Apache 2.0 lisens – se [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0))*
+
+---
+
+---
+
+## **📄 3. requirements.txt**
+```text
+ipfshttpclient>=0.8.0
+pycryptodome>=3.18.0
+pandas>=2.0.0
+numpy>=1.24.0
+sentence-transformers>=2.2.2
+click>=8.1.0
+pinata-py>=0.1.0
+tqdm>=4.64.0
+ollama>=0.1.0
+accelerate>=0.27.0
+transformers>=4.37.0
+datasets>=2.16.0
+peft>=0.7.0
+bitsandbytes>=0.41.0
+```
+
+---
+
+---
+
+## **📄 4. src/cli/create_dataset.py**
+```python
+#!/usr/bin/env python3
+import json
+import hashlib
+import argparse
+from datetime import datetime
+from pathlib import Path
+from cryptography.hazmat.primitives.asymmetric import ed25519
+from cryptography.hazmat.primitives import serialization, hashes
+from src.lib.ipfs_utils import upload_to_ipfs
+
+# Load keypair
+def load_keypair():
+    with open("keys/private_key.pem", "rb") as f:
+        private_key = serialization.load_pem_private_key(f.read(), password=None)
+    with open("keys/public_key.pem", "rb") as f
